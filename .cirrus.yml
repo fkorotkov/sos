@@ -4,6 +4,6 @@ function_task:
     container:
         image: fedora:33
     setup_script:
-      - sudo dnf install python3
+      - sudo dnf install python
       - pip install -r requirements.txt
     main_script: ./bin/sos report --batch
