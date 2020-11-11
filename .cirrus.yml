@@ -1,0 +1,7 @@
+function_task:
+    alias: 'functional'
+    name: 'Basic report functionality test'
+    container:
+        image: fedora:33
+    setup_script: pip install -r requirements.txt
+    main_script: ./bin/sos report --batch
