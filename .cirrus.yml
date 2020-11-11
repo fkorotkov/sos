@@ -3,5 +3,7 @@ function_task:
     name: 'Basic report functionality test'
     container:
         image: fedora:33
-    setup_script: pip install -r requirements.txt
+    setup_script:
+      - sudo dnf install python3
+      - pip install -r requirements.txt
     main_script: ./bin/sos report --batch
